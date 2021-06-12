@@ -1,0 +1,93 @@
+Statistics for machine learning:
+---------------------------
+Python:
+Numpy:
+import numpy as np
+arr=np.array([1,2,3])
+print(arr.shape)
+pip install numpy
+
+
+import numpy as np
+
+arr=np.array([1,2,3])
+we can specify the datatype of the elements by passing another parameter
+arr=np.array([1,2,3] , dtype='int64')
+
+print(arr.shape) // to get shape
+print(arr.ndim) // to get dimension
+print(arr.dtype) // to get datatype
+print(arr.size) // number of elements
+print(arr.itemsize) // size of each element in bytes
+
+type(arr)  //numpy ndarray
+
+-->initializing arrays:
+ np.ones((2,2),dtype='int32')
+ np.zeros(2,3)
+ np.full((2,3),99)
+ np.full_like(a,4) //replacing array a with 4 
+
+-------------
+
+arr=np.array([[1,2,3],[4,5,6],[7,8,9]])
+
+arr
+
+arr.shape
+
+arr=np.array([[1,2,3,4,5],[2,3,4,5,6],[9,7,6,8,9]])
+
+arr
+
+arr[1:2,1:4]
+
+arr=np.reshape(5,3)
+
+arr=np.linespace(1,10,5)
+=>It will give 2 elements in the range of 1 to 10
+
+arr=np.arange(0,10,2)
+=>It will give elemwnts from 0 to 10 with step size of 2
+
+
+Copying arrays:
+arr1=arr
+changes in one array will impact other.
+To overcome this use copy function:
+arr1=arr.copy()
+
+
+arr<2
+It will return true for elements which are less than 2
+=>array([0, 2, 4, 6, 8])
+output:array([ True, False, False, False, False])
+
+
+If we want to print that elements:
+arr[arr<2]
+=>0
+
+np.ones((2,5) , dtype=int)
+=>array([[1, 1, 1, 1, 1],
+       [1, 1, 1, 1, 1]])
+
+np.random.rand(3,3)
+=>array([[0.79720384, 0.77029026, 0.30404729],
+       [0.94022207, 0.77920072, 0.34052823],
+       [0.2508902 , 0.13558729, 0.13116034]])
+
+np.random.randint(4,10 , size=(3,3)) // 3 x 3 matrix with 4 to 10 random elemts
+
+np.random.randn(4,4)       produces standard normal distribution
+=>array([[-0.86598571, -0.36388808, -0.20046976, -0.66036363],
+       [-0.89242512, -0.51302776, -0.71419999,  0.34938029],
+       [-1.47196339,  0.8198744 ,  0.47472852,  1.24690332],
+       [ 0.17860184, -1.19824028,  1.07259733,  0.58902509]])
+
+np.identity(5) // the identity matrix
+
+
+
+-----------------------------------------------------------
+Pandas:
